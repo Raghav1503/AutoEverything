@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Site Metas -->
+    <title>Sign Up Page</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <!-- All core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/colors.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.loginbox {
+    width: 500px;
+    margin: 30px;
+    position: absolute;
+    background-color: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 24px;
+    color: none;
+
+
+}
+.text {
+    border: none;
+    background: none;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    border: 2px solid grey;
+    border-radius: 24px;
+    height: 50px;
+    padding: 10px 6px;
+    color: white;
+    width: 300px;
+    transition: 0.50s;
+}
+    .text:focus {
+        width:335px;
+        border-color:##ffae19;
+    }
+.button {
+    border: none;
+    background: none;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    border: 2px solid #2ecc71;
+    border-radius: 24px;
+    height: 50px;
+    padding: 14px 10px;
+    color: tomato;
+    width: 100px;
+    transition: 0.50s;
+}
+
+.button:hover {
+    background-color:#2ecc71;
+    }
+</style>
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('password').value) {
+            input.setCustomValidity('Passwords Must be Matching.');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+</script></head>
+<body>
+
+    <div id="wrapper">
+
+
+        <header class="header transparent-header">
+            <div class="container">
+                <nav class="navbar navbar-toggleable-md navbar-inverse yamm" id="slide-nav">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTopMenu" aria-controls="navbarTopMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">AE</a>
+                    <div class="collapse navbar-collapse" id="navbarTopMenu">
+                        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                            <li><a class="nav-link" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="index.html">Login/SignUp</a></li>
+                            <li><a class="nav-link" href="index.html">About Us</a></li>
+                            <li><a class="nav-link" href="index.html">Contact Us</a></li>
+                            <!--<li class="nav-item dropdown has-submenu">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <li><a class="dropdown-item" href="#">Sub Dropdown <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sub Dropdown <span class="hidden-md-down hidden-sm-down hidden-xs-down"><i class="fa fa-angle-right"></i></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                            <li><a class="dropdown-item" href="#">Sub Dropdown Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Dropdown Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown Item</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown Item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown yamm-fw nav-item has-submenu">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown61" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown61">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="mega-menu-items">
+                                                    <h4>First column</h4>
+                                                    <ol>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="mega-menu-items">
+                                                    <h4>Second Block</h4>
+                                                    <ol>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                        <li><a href="#">Mega Menu Item</a></li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 hidden-md-down hidden-sm-down hidden-xs-down">
+                                                <div class="menu-image">
+                                                    <img src="upload/menu-banner_01.jpg" alt="" class="img-fluid">
+                                                    <div class="menu-details">
+                                                        <p class="bolder">Build Your Own</p>
+                                                        <p>The Micrology comes with mega menu section<br> and HTML blocks.</p>
+                                                        <a href="#" class="btn btn-orange btn-sm withradius secbtn">Did you like?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="nav-link" href="index.html">Contact</a></li>
+                        </ul>-->
+
+
+
+
+                    </div>
+                </nav>
+            </div><!--/.container inside nav-->
+        </header>
+
+        <section class="hero">
+            <div class="magnifier grd3"></div>
+            <div class="container">
+                <div class="hero-desc">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                          <div class="loginbox">
+                              <form action="formpage.html">
+                                  <div class="heading">
+                                      <font color="tomato">
+                                          <br />
+                                          <h2>Sign Up</h2>
+                                  </div>
+
+                                  <input type="email" placeholder="Enter Your Email" class="text" /><br />
+                                  <input type="text" placeholder="Enter Your Username" class="text" /><br />
+                                  <input type="password" name="password" placeholder="Enter your Password" class="text" id="password" required /><br />
+                                  <input type="password" name="password_confirm" placeholder="Confirm Password" class="text" id="password_confirm" required oninput="check(this)" /><br />
+                                  <input type="text" placeholder="Enter Your Phone Number" class="text"><br />
+                                  <input type="submit" name="submit" value="Submit" class="btn btn-gradient btn-sm grd4 withradius secbtn " >
+
+                                  <a href="" class="btn btn-gradient btn-sm grd4 withradius secbtn ">Login
+                          </a>
+                                  </font>
+                              </form>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- end section -->
+
+<!--<a href="#" class="btn btn-primary btn-sm withradius secbtn withicon">Read more <i class="fa fa-long-arrow-right"></i></a>
+        <section class="section bt littlepad">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="screen-normal wow slideInLeft">
+                            <img src="upload/device_02.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mobmartop30">
+                        <div class="tagline-v2 padleft30">
+                            <h3>Take a Look Around our Outstanding Examples</h3>
+                            <a href="#" class="btn btn-gradient grd4 withradius secbtn withicon">See more examples <i class="fa fa-long-arrow-right"></i></a>
+                            <p>We designed the most suitable module positions specific to your website needs. Edit your website in just a few steps. All control is in your hands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+-->
+        <footer class="footer section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <a href="index.html" title=""><img src="images/flogo.png" class="footer-logo" alt=""></a>
+                            <h4 class="widget-title">
+                                About Auto Everything
+                            </h4>
+                            <div class="about-widget">
+                                <p>Making the world smarter and better one move at a time</p>
+                            </div><!-- end about-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                    <div class="col-md-8 mobmartop30">
+                        <div class="widget">
+                            <div class="footer-links">
+                                <nav class="foot-link">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+
+                                        <li><a href="#">Get In Touch</a></li>
+                                    </ul>
+                                </nav><!-- end foot -->
+                            </div><!-- end links -->
+
+                            <div class="widget">
+                                <div class="contact-widget">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-map-marker"></i> Our Office
+                                            </h4>
+                                            <p>Hostel H, Thapar University, Patiala </p>
+                                        </div><!-- end col -->
+
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-phone"></i> Phone
+                                            </h4>
+                                            <p>+91 23237167</p>
+                                        </div><!-- end col -->
+
+                                        <div class="col-md-4">
+                                            <h4 class="widget-title">
+                                                <i class="fa fa-envelope-open-o"></i>  Email
+                                            </h4>
+                                            <p>theruntimeterror@gmail.com</p>
+                                        </div><!-- end col -->
+                                    </div><!-- end row -->
+                                </div><!-- end contact-widget -->
+                            </div><!-- end widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-social">
+                            <div itemscope="" itemtype="http://schema.org/Organization">
+                                <a class="social-icon" target="_blank" itemprop="sameAs" href="https://www.facebook.com/htmldotdesign/"><i class="fa fa-facebook"></i></a>
+                                <a class="social-icon" target="_blank" itemprop="sameAs" href="https://www.twitter.com/htmldotdesign/"><i class="fa fa-twitter"></i></a>
+                                <a class="social-icon" target="_blank" itemprop="sameAs" href="https://plus.google.com/+htmldesign"><i class="fa fa-google-plus"></i></a>
+                              
+                            </div>
+                        </div>
+                        <div class="footer-copy">
+                            <p>© 2019 All Rights Reserved <a href="#">AutoEverything.com</a></p>
+                        </div><!-- end copy -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer><!-- end footer -->
+    </div><!-- end wrapper -->
+
+    <div class="dmtop"><i class="fa fa-long-arrow-up"></i></div>
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

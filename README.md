@@ -1,2 +1,2 @@
 # FrontendAE
-This prject contains only the front end if the official AutoEverything project.
+This project contains only the front end if the official AutoEverything project.
